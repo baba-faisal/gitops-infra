@@ -3,4 +3,4 @@ image: ganjababa/separate-node-app
 tag: "v4"
 envName: "NOTIFICATIONS SERVICE"
 dbHost: "my-external-database"
-dbPassword: "redis-password-456"
+dbPassword: "super-secret-password-123"
