@@ -23,7 +23,7 @@ spec:
               value: "{{ .Values.envName }}"
             - name: DB_HOST
               value: "{{ .Values.dbHost }}"
-             - name: DB_PASSWORD
+            - name: DB_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: {{ .Release.Name }}-secret
