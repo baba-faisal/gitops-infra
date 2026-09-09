@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: node-app
+  name: {{ .Release.Name }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: node-app
+      app: {{ .Release.Name }}
   template:
     metadata:
       labels:
-        app: node-app
+        app: {{ .Release.Name }}
     spec:
       containers:
-        - name: node-app
+        - name: {{ .Release.Name }}
           image: "{{ .Values.image }}:{{ .Values.tag }}"
           imagePullPolicy: Always
           ports:
