@@ -26,5 +26,5 @@ spec:
             - name: DB_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: {{ .Release.Name }}-secret
-                  key: db-password
+                  name: db-credentials
+                  key: DB_PASSWORD

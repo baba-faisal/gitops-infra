@@ -3,4 +3,3 @@ image: ganjababa/separate-node-app
 tag: "v4"
 envName: "NOTIFICATIONS SERVICE"
 dbHost: "my-external-database"
-dbPassword: "super-secret-password-123"
