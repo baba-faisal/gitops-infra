@@ -14,7 +14,7 @@ spec:
         - ../values/main-service.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: testing
+    namespace: dev
   syncPolicy:
     automated:
       prune: true
