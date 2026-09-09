@@ -2,4 +2,5 @@ replicaCount: 1
 image: ganjababa/separate-node-app
 tag: "v3"
 envName: "MAIN SERVICE"
-dbPassword: "postgres-password-123"
+dbHost: "my-external-database"              # <--- ADD THIS (The name of our Terraform container!)
+dbPassword: "super-secret-password-123"
