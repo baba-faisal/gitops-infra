@@ -1,6 +1,6 @@
 replicaCount: 2
 image: ganjababa/separate-node-app
-tag: "v3"
+tag: "v4"
 envName: "NOTIFICATIONS SERVICE"
 dbHost: "pending-redis-db"
 dbPassword: "redis-password-456"
