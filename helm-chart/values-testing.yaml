@@ -1,4 +1,0 @@
-replicaCount: 1
-image: separate-node-app
-tag: "v1"
-envName: "TESTING"

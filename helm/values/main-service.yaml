@@ -1,0 +1,5 @@
+replicaCount: 1
+image: babaganja/separate-node-app
+tag: "v3"
+envName: "MAIN SERVICE"
+dbPassword: "postgres-password-123"

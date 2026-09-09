@@ -21,3 +21,8 @@ spec:
           env:
             - name: ENV_NAME
               value: "{{ .Values.envName }}"
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Release.Name }}-secret
+                  key: db-password
