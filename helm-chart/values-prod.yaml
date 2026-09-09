@@ -1,0 +1,4 @@
+replicaCount: 2
+image: separate-node-app
+tag: "v1"
+envName: "PRODUCTION"
