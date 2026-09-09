@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: testing-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/baba-faisal/gitops-infra.git
+    targetRevision: main
+    path: helm/microservice
+    helm:
+      valueFiles:
+        - ../values/testing-env.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: testing
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
