@@ -1,4 +1,4 @@
-replicaCount: 1
+replicaCount: 2
 image: ganjababa/separate-node-app
 tag: "v3"
 envName: "NOTIFICATIONS SERVICE"
